@@ -1,9 +1,9 @@
 
 const { exit } = require("process");
 const puppeteer = require("puppeteer");
-// const dotenv = require("dotenv");
-const ID = "2019uch1454";
-const pass = "1454";
+require("dotenv").config();
+const ID = process.env.ID;
+const pass = process.env.PASS;
 
 async function main() {
 
